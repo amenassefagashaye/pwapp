@@ -11,6 +11,7 @@
   "theme_color": "#0a0f1e",
   "background_color": "#0f172a",
   "categories": ["games", "entertainment"],
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "/icons/icon-192.png",
