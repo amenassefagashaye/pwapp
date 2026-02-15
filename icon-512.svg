@@ -1,0 +1,56 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with radial gradient -->
+  <defs>
+    <radialGradient id="bgRadial" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#1e2a3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0f1e;stop-opacity:1" />
+    </radialGradient>
+    
+    <linearGradient id="goldGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="goldGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#bgRadial)" stroke="url(#goldGradient2)" stroke-width="20"/>
+  
+  <!-- Inner gold circle -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#fbbf24" stroke-width="8" stroke-dasharray="20 20"/>
+  
+  <!-- Bingo card representation (5x5 grid) -->
+  <g transform="translate(156,156)">
+    <!-- Grid lines -->
+    <rect x="0" y="0" width="200" height="200" fill="none" stroke="#fbbf24" stroke-width="4"/>
+    <line x1="40" y1="0" x2="40" y2="200" stroke="#fbbf24" stroke-width="2" opacity="0.6"/>
+    <line x1="80" y1="0" x2="80" y2="200" stroke="#fbbf24" stroke-width="2" opacity="0.6"/>
+    <line x1="120" y1="0" x2="120" y2="200" stroke="#fbbf24" stroke-width="2" opacity="0.6"/>
+    <line x1="160" y1="0" x2="160" y2="200" stroke="#fbbf24" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="40" x2="200" y2="40" stroke="#fbbf24" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="80" x2="200" y2="80" stroke="#fbbf24" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="120" x2="200" y2="120" stroke="#fbbf24" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="160" x2="200" y2="160" stroke="#fbbf24" stroke-width="2" opacity="0.6"/>
+  </g>
+  
+  <!-- Center heart (red) -->
+  <g transform="translate(256,256)">
+    <path d="M0 -40 L40 0 L0 40 L-40 0 Z" fill="none" stroke="#ff3b3b" stroke-width="8" transform="rotate(45)"/>
+    <path d="M0 -20 Q20 -20 20 0 Q20 20 0 40 Q-20 20 -20 0 Q-20 -20 0 -20" fill="#ff3b3b" filter="url(#goldGlow)">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- B-I-N-G-O letters at bottom -->
+  <text x="256" y="420" font-family="Times New Roman, serif" font-size="32" font-weight="bold" text-anchor="middle" fill="url(#goldGradient2)">BINGO</text>
+  
+  <!-- IDG text -->
+  <text x="256" y="470" font-family="Times New Roman, serif" font-size="24" text-anchor="middle" fill="#94a3b8">IDG</text>
+</svg>

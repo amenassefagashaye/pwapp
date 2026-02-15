@@ -1,0 +1,53 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with golden gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0f1e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e2a3a;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b45309;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="heartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff3b3b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6666;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#bgGradient)" stroke="url(#goldGradient)" stroke-width="16"/>
+  
+  <!-- Golden border effect -->
+  <circle cx="256" cy="256" r="230" fill="none" stroke="#fbbf24" stroke-width="4" opacity="0.3"/>
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#b45309" stroke-width="2" opacity="0.2"/>
+  
+  <!-- BINGO letters in golden color -->
+  <text x="256" y="140" font-family="Times New Roman, serif" font-size="80" font-weight="bold" text-anchor="middle" fill="url(#goldGradient)" filter="url(#glow)">B</text>
+  <text x="256" y="220" font-family="Times New Roman, serif" font-size="80" font-weight="bold" text-anchor="middle" fill="url(#goldGradient)" filter="url(#glow)">I</text>
+  <text x="256" y="300" font-family="Times New Roman, serif" font-size="80" font-weight="bold" text-anchor="middle" fill="url(#goldGradient)" filter="url(#glow)">N</text>
+  <text x="256" y="380" font-family="Times New Roman, serif" font-size="80" font-weight="bold" text-anchor="middle" fill="url(#goldGradient)" filter="url(#glow)">G</text>
+  <text x="256" y="460" font-family="Times New Roman, serif" font-size="80" font-weight="bold" text-anchor="middle" fill="url(#goldGradient)" filter="url(#glow)">O</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="156" cy="100" r="12" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="356" cy="100" r="12" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="156" cy="412" r="12" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="356" cy="412" r="12" fill="#fbbf24" opacity="0.6"/>
+  
+  <!-- Small stars/dots -->
+  <circle cx="206" cy="156" r="6" fill="#f59e0b" opacity="0.4"/>
+  <circle cx="306" cy="156" r="6" fill="#f59e0b" opacity="0.4"/>
+  <circle cx="206" cy="356" r="6" fill="#f59e0b" opacity="0.4"/>
+  <circle cx="306" cy="356" r="6" fill="#f59e0b" opacity="0.4"/>
+</svg>
