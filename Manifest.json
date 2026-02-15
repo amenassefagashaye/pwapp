@@ -1,32 +1,12 @@
 {
-  "short_name": "Esub",
-  "name": "መርከብ ቢንጎ ጨዋታ",
-  "description": "Play traditional Ethiopian bingo online! Select boards, mark numbers, and enjoy an interactive golden flash experience.",
-  "lang": "am",
+  "background_color": "rgb(46, 150, 206)",
   "dir": "ltr",
-  "start_url": "/index.html",
-  "scope": "/",
   "display": "standalone",
-  "orientation": "portrait",
-  "theme_color": "#0a0f1e",
-  "background_color": "#0f172a",
-  "categories": ["games", "entertainment"],
-  "prefer_related_applications": false,
-  "icons": [
-    {
-      "src": "/icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ],
-  "screenshots": [],
-  "shortcuts": [],
-  "related_applications": []
+  "name": "amenassefagashaye.github",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "amenassefagashaye.github",
+  "start_url": "/",
+  "theme_color": "#2fbb37",
+  "description": "Bingo"
 }
