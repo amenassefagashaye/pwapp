@@ -1,12 +1,24 @@
 {
-  "background_color": "rgb(46, 150, 206)",
-  "dir": "ltr",
+  "name": "AMEN-GOGS Bingo Game",
+  "short_name": "Bingo Game",
+  "start_url": "/index.html",
   "display": "standalone",
-  "name": "amenassefagashaye.github",
+  "background_color": "rgb(46, 150, 206)",
+  "theme_color": "#2fbb37",
   "orientation": "any",
   "scope": "/",
-  "short_name": "amenassefagashaye.github",
-  "start_url": "/",
-  "theme_color": "#2fbb37",
-  "description": "Bingo"
+  "dir": "ltr",
+  "description": "Fully functional Bingo game with red bold numbers 1-75, audio calling, and pattern detection",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
