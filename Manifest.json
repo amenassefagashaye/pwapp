@@ -8,7 +8,7 @@
   "orientation": "any",
   "scope": "/",
   "dir": "ltr",
-  "description": "Fully functional Bingo game with red bold numbers 1-75, audio calling, and pattern detection",
+  "description": "Fully functional Bingo game with red bold numbers 1-75, audio calling, pattern detection, and offline support for PWA installation.",
   "icons": [
     {
       "src": "/icons/icon-192.png",
